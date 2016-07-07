@@ -1,0 +1,34 @@
+.menu{
+    position:fixed;
+    width:200px;
+    height:480px;
+    border: 2px solid;
+    padding:35px;
+    font-size:2.5em;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    background-color:#AFBDA2;
+}
+.menu div{
+    width:200px;
+    padding:10px;
+    font-color:red;
+}
+.menu a{
+    width:100%;
+    height:20px;
+   color: #fffee4;
+    text-decoration:none;
+}
+.menu div:hover{
+    background-color:#55ffa7;
+    border-radius:5px;
+}
+h1{
+    font-color:blue;
+    background-color: #39ff67;
+    position:center;
+}
+html,body{
+    height:100%;
+
+}
