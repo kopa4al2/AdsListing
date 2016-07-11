@@ -28,7 +28,15 @@
             <input type="text" id="registerUsername" required="true"/>
             <div> Password: </div>
             <input type="password" id="registerPassword" required="true"/>
-            <div></div>
+            <div>Email: </div>
+            <input type="text" id="registerEmail" required="true"/>
+            <div>First name: </div>
+            <input type="text" id="firstNameRegister" required="false"/>
+            <div>Last name: </div>
+            <input type="text" id="lastNameRegister" required="false"/>
+            <div>Date of birth: </div>
+            <input type="date" id="birthsdayRegister" required="false"/>
+            <p></p>
             <input type="submit" id="registerSubmit" value="Register"/>
         </form>
     </section>
@@ -38,8 +46,26 @@
             <input type="text" id="loginUsername" required="true"/>
             <div> Password: </div>
             <input type="password" id="loginPassword" required="true"/>
-            <div></div>
+            <p></p>
             <input type="submit" id="loginSubmit" value="Log in"/>
+        </form>
+    </section>
+    <section id="userInterface">
+        <form id="UserInterfaceForm">
+         <label id="firstNameLabel">First Name: </label>
+         <input id="firstNameUserInterface" type="text" value="First Name" l/>
+         <p></p>
+         <label id="lastNameLabel">Last Name: </label>
+         <input id="lastNameUserInterface" type="text" value="Last Name"/>
+         <p></p>
+         <label id="birthsdayLabel">Date of birth: </label>
+         <input type="date"/>
+         <p></p>
+         <label id="emailLabel">Email: </label>
+         <input type="text" id="emailUserInterface" value="Email"/>
+         <p></p>
+         <input type="submit" id="saveChangeUserInterface" value="Save changes"/>
+         <button id="userPanelChangeSettings">Change Settings</button>
         </form>
     </section>
 </main>

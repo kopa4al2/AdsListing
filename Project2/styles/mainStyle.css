@@ -31,7 +31,7 @@ h1{
 
 }
 
-#loginInterface, #registerInterface {
+#loginInterface, #registerInterface, #userInterface {
    // padding:20px;
     margin-left:400px;
     border-radius:15px;
