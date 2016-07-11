@@ -1,0 +1,49 @@
+.menu{
+    position:fixed;
+    width:200px;
+    height:450px;
+    border: 2px solid;
+    padding:35px;
+    font-size:2.5em;
+    font-family:bold,"Comic Sans MS", cursive, sans-serif;
+    background-color:#AFBDA2;
+}
+.menu div{
+    width:200px;
+    padding:10px;
+    font-color:red;
+}
+.menu a{
+    width:100%;
+    height:20px;
+   color: #fffee4;
+    text-decoration:none;
+}
+.menu div:hover{
+    border-radius:5px;
+    background:#55ffa7 url("images/vert-one_arrow.gif")no-repeat 0 35px;
+    border:dashed #FFF;
+}
+h1{
+    font-color:blue;
+    background-color: #39ff67;
+    text-align:center;
+
+}
+
+#loginInterface, #registerInterface {
+   // padding:20px;
+    margin-left:400px;
+    border-radius:15px;
+    background-color:#f2f2f2;
+    box-shadow:2px 2px 2px 2px rgba(0,0,0,0.2);
+    //margin:10% auto;
+    width :35%;
+    height:55%;
+    padding:10px;
+    text-align:center;
+}
+html,body{
+    height:100%;
+
+}
