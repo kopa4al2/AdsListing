@@ -1,3 +1,12 @@
+a{
+    font-family: arial, 'times new roman', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #00f;
+    text-decoration: none;
+   /* text-decoration:none;
+    font-weight:bold;*/
+}
 .menu{
     position:fixed;
     width:200px;
@@ -5,7 +14,7 @@
     border: 2px solid;
     padding:35px;
     font-size:2.5em;
-    font-family:bold,"Comic Sans MS", cursive, sans-serif;
+    /*font-family:bold,"Comic Sans MS", cursive, sans-serif;*/
     background-color:#AFBDA2;
 }
 .menu div{
@@ -14,15 +23,31 @@
     font-color:red;
 }
 .menu a{
+    font-family:'galada';
+    font-size:1.2em;
     width:100%;
     height:20px;
-   color: #fffee4;
+   color: #96ffee;
     text-decoration:none;
 }
 .menu div:hover{
     border-radius:5px;
     background:#55ffa7 url("images/vert-one_arrow.gif")no-repeat 0 35px;
-    border:dashed #FFF;
+}
+#homeSection{
+    float:right;
+    width:79%;
+}
+#homeSection h1{
+    background-color: #06c0ab;
+}
+#homeSection h2{
+    text-align:center;
+}
+#homeSection a{
+    text-decoration: none;
+    font-weight:bold;
+    color:darkblue;
 }
 h1{
     font-color:blue;
@@ -30,8 +55,60 @@ h1{
     text-align:center;
 
 }
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
-#loginInterface, #registerInterface, #userInterface {
+/* Modal Content/Box */
+.modal-content {
+    background-color: blue; /*#fefefe*/
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+#modalHeader{
+    text-align:center;
+    font-size:2em;
+    font-weight:bold;
+    color: greenyellow;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#adsSection a{
+    text-decoration:none;
+    font-weight:bold;
+    color:darkblue;
+}
+#adsSection>h1{
+
+}
+#adsSection{
+    float:right;
+    width:79%;
+}
+#loginInterface, #registerInterface, #userInterface, #searchForm, #addAdForm {
    // padding:20px;
     margin-left:400px;
     border-radius:15px;
@@ -42,6 +119,27 @@ h1{
     height:55%;
     padding:10px;
     text-align:center;
+}
+table{
+    align:center;
+}
+table th{
+    background:#AAA;
+    font-family:bold;
+    font-size:1.4em;
+}
+table td{
+    background:#DDD;
+    padding:10px;
+}
+#searchForm{
+    padding: 10px;
+    display:inline-block;
+}
+#searchForm select{
+    margin-left:5px;
+    margin-right:29px;
+    margin-bottom:15px;
 }
 html,body{
     height:100%;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>TODO</title>
     <link rel="stylesheet" type="text/css" href="styles/mainStyle.css"/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Galada">
     <script src="scripts/jquery-3.0.0.js"></script>
     <script src="scripts/mainScript.js"></script>
 </head>
@@ -15,13 +16,66 @@
     <section id="menuSect">
     <div class="menu">
         <div id="homeLink"><a href="#">Home</a></div>
+        <div id="viewAdsLink"><a href="#">View ads</a></div>
         <div id="loginLink"><a href="#">Login</a></div>
         <div id="registerLink"><a href="#">Register</a></div>
         <div id="logoutLink"><a href="#">Logout</a></div>
         <div id="userPanelLink"><a href="#">User panel</a></div>
     </div>
     </section>
-    <section id="homeSection"></section>
+
+    <section id="homeSection">
+        <div>
+        <h1>This is my SoftUni project</h1>
+        <h2 id="registerHomePage">I suggest you <a id="registerHomePageLink" href="#">Register</a></h2>
+        </div>
+    </section>
+    <section id="adsSection">
+        <h1 id="registerAdsSection">To add an ad, please <a id="registerAdsSectionLink" href="#">register</a></h1>
+        <h1 id="createAdd"><a href="#">Add your ad</a></h1>
+        <!--Table with ads-->
+        <div id="listAds"></div>
+        <form id="searchForm">
+            <input id="searchInput" type="text" placeholder="Search by title"/>
+            <select id="categorySelectSearch">
+                <option selected disabled>Choose category</option>
+                <option id="realEstateSearch" value="Real estate">Real estate</option>
+                <option id="carsSearch" value="Cars">Cars</option>
+                <option id="computersSearch" value="PCs and laptops">PCs and laptops</option>
+                <option id="otherSearch" value="other">other</option>
+            </select>
+            <button id="searchButton">Search</button>
+
+        </form>
+        <br/>
+        <br/>
+        <form id="addAdForm">
+            <div>Choose ad category</div>
+            <select id="categorySelectAdd" required="true">
+                <option selected disabled>Ad Category</option>
+                <option id="realEstateAdd" value="RealEstate">Real estate</option>
+                <option id="carsAdd" value="Cars">Cars</option>
+                <option id="computersAdd" value="PC">PCs and laptops</option>
+                <option id="otherAdd" value="other">other</option>
+                </select>
+            <div>Write ad title</div>
+               <input id="adTitle" type="text" placeholder="Title" required="true"/>
+            <div>Write ad description</div>
+               <textarea id="adDescription" rows="10" cols="10" required="true"></textarea>
+            <div>Choose your price</div>
+            <input id="price" type="number" placeholder="Price" required="true"/>
+                <!--<input id="adLogo" type="file" name="pic" accept="image/*">-->
+            <select id="currencySelect" required="true">
+                <option selected disabled>Currency</option>
+                <option value="Euro">Euro</option>
+                <option value="BGN">BGN</option>
+                <option value="USD">USD</option>
+            </select>
+            <br/>
+                <input type="submit" id="createAd" value="Create Ad"/>
+
+        </form>
+    </section>
     <section id="registerInterface">
         <form id="registerForm">
             <div> Username: </div>
@@ -29,13 +83,13 @@
             <div> Password: </div>
             <input type="password" id="registerPassword" required="true"/>
             <div>Email: </div>
-            <input type="text" id="registerEmail" required="true"/>
+            <input type="email" id="registerEmail" required="true"/>
             <div>First name: </div>
-            <input type="text" id="firstNameRegister" required="false"/>
+            <input type="text" id="firstNameRegister" required="true"/>
             <div>Last name: </div>
-            <input type="text" id="lastNameRegister" required="false"/>
+            <input type="text" id="lastNameRegister" required="true"/>
             <div>Date of birth: </div>
-            <input type="date" id="birthsdayRegister" required="false"/>
+            <input type="date" id="birthsdayRegister" required="true"/>
             <p></p>
             <input type="submit" id="registerSubmit" value="Register"/>
         </form>
@@ -53,21 +107,32 @@
     <section id="userInterface">
         <form id="UserInterfaceForm">
          <label id="firstNameLabel">First Name: </label>
-         <input id="firstNameUserInterface" type="text" value="First Name" l/>
+         <input id="firstNameUserInterface" type="text" placeholder="First Name" l/>
          <p></p>
          <label id="lastNameLabel">Last Name: </label>
-         <input id="lastNameUserInterface" type="text" value="Last Name"/>
+         <input id="lastNameUserInterface" type="text" placeholder="Last Name"/>
          <p></p>
          <label id="birthsdayLabel">Date of birth: </label>
-         <input type="date"/>
+         <input id="birthsdayUserInterface" type="date"/>
          <p></p>
          <label id="emailLabel">Email: </label>
-         <input type="text" id="emailUserInterface" value="Email"/>
+         <input type="email" id="emailUserInterface" placeholder="Email"/>
          <p></p>
          <input type="submit" id="saveChangeUserInterface" value="Save changes"/>
          <button id="userPanelChangeSettings">Change Settings</button>
         </form>
     </section>
+        <!-- info box -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="closeModal" class="close">x</span>
+                <p id="modalHeader"></p>
+                <footer>     </footer>
+            </div>
+
+        </div>
 </main>
 <footer>
 
